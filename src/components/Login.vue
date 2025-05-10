@@ -28,7 +28,8 @@ export default {
     },
     methods: {
         login() {
-            console.log('Vueコンポーネントがマウントされました')
+            console.log('START')
+            console.log(process.env.ENV_TEST);
             // 簡単な例としてハードコードされた認証情報をチェック
             // 実際のアプリケーションではAPIを呼び出す必要があります
             if (this.username === 'user' && this.password === 'pass') {
