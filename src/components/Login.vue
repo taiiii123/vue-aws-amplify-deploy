@@ -29,7 +29,7 @@ export default {
     methods: {
         login() {
             console.log('START')
-            console.log(process.env.ENV_TEST);
+            console.log(process.env.VUE_APP_ENV_TEST);
             // 簡単な例としてハードコードされた認証情報をチェック
             // 実際のアプリケーションではAPIを呼び出す必要があります
             if (this.username === 'user' && this.password === 'pass') {
